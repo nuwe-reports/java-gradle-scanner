@@ -1,3 +1,4 @@
+package com.nuwe;
 
 public class App {
 

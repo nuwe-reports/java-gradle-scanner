@@ -1,4 +1,8 @@
+package com.nuwe;
 import org.junit.Test;
+
+import com.nuwe.App;
+
 import static org.junit.Assert.assertEquals;
 
 public class AppTest {
