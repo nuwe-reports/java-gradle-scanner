@@ -27,4 +27,6 @@ jobs:
 
       - name: SonarQube Scan 🚨
         run: ./gradlew sonarqube -Dsonar.projectKey=${{ github.event.repository.name }}
-        
+      
+      - run: echo "This project key is ${{ github.event.repository.name }}"
+  
