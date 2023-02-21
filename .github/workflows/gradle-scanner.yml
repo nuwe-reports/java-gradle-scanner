@@ -37,4 +37,4 @@ jobs:
           arguments: build
 
       - name: SonarQube Scan 🚨
-        run: ./gradlew -Dsonar.host.url=${{ secrets.SONAR_HOST_URL }} sonarqube
+        run: ./gradlew -Dsonar.host.url=${{ secrets.SONAR_HOST_URL }} -Dsonar.java.jdkHome=/usr/lib/jvm/java-8-openjdk/ sonarqube
