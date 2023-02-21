@@ -1,21 +1,23 @@
-# SonarQube Scanner for Gradle
+<div align="center">
+  <img align="center"  width="auto" height="auto" src="https://nuwe.io/images/Group-3-3.png" />
+  <br/>
 
-This example demonstrates how to analyze a simple project built with [Gradle](https://gradle.org/).
+  <div id="user-content-toc">
+    <ul>
+      <summary><h1 style="display: inline-block;">Java & Gradle Template</h1></summary>
+    </ul>
+  </div>
+</div>
 
-## Prerequisites
+Template to build a challenge using Java and Gradle. It will be graded when doing a push to the main branch.
 
-* [SonarQube](http://www.sonarqube.org/downloads/) 8.9 LTS or Latest
-* A gradle wrapper is included that bundles gradle. All other required plugins will be pulled by gradle as needed.
+## Technology
+- [Gradle 6.7.1](https://gradle.org/)
+- [Java 11+](https://www.java.com/en/download/)
 
 ## Usage
+`./gradlew [utilities]`
+- test: pass the test
+- build: build the project
 
-Run the following command (updating the sonar.host.url property as appropriate):
-
-* On Unix-like systems:
-  `./gradlew -Dsonar.host.url=http://myhost:9000 sonarqube`
-* On Windows:
-  `.\gradlew.bat -D'sonar.host.url=http://myhost:9000' sonarqube`
-
-## Coverage
-
-To get the project [test coverage](https://community.sonarsource.com/t/coverage-test-data-importing-jacoco-coverage-report-in-xml-format) computed, add gradle task `jacocoTestReport` to your command line.
+Generated from [SonarQube Java with Gradle official example](https://github.com/SonarSource/sonar-scanning-examples/tree/master/sonarqube-scanner-gradle/gradle-basic)
