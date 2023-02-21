@@ -25,5 +25,8 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew build
 
+      - name: Run the tests
+        run: ./gradlew test
+
       - name: SonarQube Scan 🚨
         run: ./gradlew sonarqube
