@@ -1,14 +1,3 @@
-# This workflow uses actions that are not certified by GitHub.
-# They are provided by a third-party and are governed by
-# separate terms of service, privacy policy, and support
-# documentation.
-
-# GitHub recommends pinning actions to a commit SHA.
-# To get a newer version, you will need to update the SHA.
-# You can also reference a tag or branch, but the action may change without warning.
-
-name: Java CI
-
 on: [push]
 
 jobs:
@@ -37,4 +26,5 @@ jobs:
           arguments: build
 
       - name: SonarQube Scan 🚨
-        run: ./gradlew -Dsonar.host.url=${{ secrets.SONAR_HOST_URL }} sonarqube
+        run: ./gradlew sonarqube -Dsonar.projectKey=${{ github.event.repository.name }}
+        

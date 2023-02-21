@@ -1,0 +1,6 @@
+projectKey=java-gradle-scanner
+serverUrl=http://18.222.192.20
+serverVersion=9.3.0.51899
+dashboardUrl=http://18.222.192.20/dashboard?id=java-gradle-scanner
+ceTaskId=AYZ0Z_cQJGogUeG8ot8t
+ceTaskUrl=http://18.222.192.20/api/ce/task?id=AYZ0Z_cQJGogUeG8ot8t
