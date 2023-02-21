@@ -12,8 +12,8 @@
 Template to build a challenge using Java and Gradle. It will be graded when doing a push to the main branch.
 
 ## Technology
-- [Gradle 6.7.1](https://gradle.org/)
-- [Java 11+](https://www.java.com/en/download/)
+- [Gradle 6.7.1](https://docs.gradle.org/6.7.1/release-notes.html)
+- [Java 11](https://www.oracle.com/es/java/technologies/javase/jdk11-archive-downloads.html)
 
 ## Usage
 `./gradlew [utilities]`
