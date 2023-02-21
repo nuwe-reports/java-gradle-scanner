@@ -12,5 +12,4 @@ public class AppTest {
   public void myFailedTest() {
     assertEquals(App.sum2(3, 9), 9);
   }
-
 }
