@@ -4,11 +4,13 @@ import static org.junit.Assert.assertEquals;
 public class AppTest {
 
   @Test
-  void myPassedTest() {
+  public void myPassedTest() {
       assertEquals(App.sum2(3, 4), 7);
   }
-  /*@Test
-    void myFailedTest() {
-        assertEquals(First.sum2(3, 9), 9);
-  }*/
+  
+  @Test
+  public void myFailedTest() {
+    assertEquals(App.sum2(3, 9), 9);
+  }
+
 }
