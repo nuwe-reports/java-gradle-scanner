@@ -12,10 +12,10 @@ public class AppTest {
       assertEquals(7, App.sum2(3, 4));
   }
   
-  /*
+  
   @Test
   public void myFailedTest() {
     assertEquals(9, App.sum2(3, 9));
   }
-  */
+  
 }

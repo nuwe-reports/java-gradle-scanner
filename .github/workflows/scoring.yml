@@ -27,3 +27,11 @@ jobs:
 
       - name: Run the tests and SonarQube Scan 🚨
         run:  ./gradlew test jacocoTestReport sonarqube
+      
+      - name: Update solution
+        if: always()
+        uses: actions/github-script@v6
+        with:
+          result-encoding: string
+          script: |
+            console.log('Javascript works?')
