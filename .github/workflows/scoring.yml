@@ -24,9 +24,9 @@ jobs:
       
       - name: Build with Gradle
         run: ./gradlew build
-
-      - name: Run the tests and SonarQube Scan 🚨
-        run:  ./gradlew test jacocoTestReport sonarqube
+      
+      - name: Run the tests
+        run: ./gradlew test jacocoTestReport 
       
       - name: Update solution
         if: always()
@@ -34,4 +34,21 @@ jobs:
         with:
           result-encoding: string
           script: |
-            console.log('Javascript works?')
+            const fs = require('fs')
+            const DomParser = require('dom-parser');
+
+            const file = fs.readFileSync('./build/test-results/test/TEST-com.nuwe.AppTest.xml')
+            var parser = new DomParser()
+            const dom = parser.parseFromString(file.toString())
+
+            const assertionResults = []
+
+            dom.getElementsByTagName("testcase").forEach((testcase) => {
+                testName = testcase.getAttribute("name")
+                testPassed = testcase.getElementsByTagName("failure").length === 0
+                assertionResults.push(testPassed)
+            })
+            console.log(assertionResults)
+
+      - name: SonarQube Scan 🚨
+        run:  ./gradlew sonarqube
