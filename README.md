@@ -20,4 +20,8 @@ Template to build a challenge using Java and Gradle. It will be graded when doin
 - test: pass the test
 - build: build the project
 
-Generated from [SonarQube Java with Gradle official example](https://github.com/SonarSource/sonar-scanning-examples/tree/master/sonarqube-scanner-gradle/gradle-basic)
+Generated from [SonarQube 8.9 Java with Gradle official example](https://github.com/SonarSource/sonar-scanning-examples/tree/dabb9263b82cdbc6f0904a3e570e1bd380a24e1c/sonarqube-scanner-gradle/gradle-basic)
+
+
+
+<!--Generated from [SonarQube Java with Gradle official example](https://github.com/SonarSource/sonar-scanning-examples/tree/master/sonarqube-scanner-gradle/gradle-basic)-->
